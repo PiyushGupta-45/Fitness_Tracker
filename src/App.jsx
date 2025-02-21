@@ -12,6 +12,8 @@ import Back from './Website/Track_Workout/Back/Back'
 import Chest from './Website/Track_Workout/Chest/Chest'
 import Biceps from './Website/Track_Workout/Arms/Biceps'
 import Legs from './Website/Track_Workout/Legs/Legs'
+import BMR from './Website/BMR'
+import CaloriesCalculator from './Website/CaloriesCalculator'
 
 function App() {
   const router = createBrowserRouter(
@@ -28,6 +30,8 @@ function App() {
         <Route path='/chest' element={<Chest/>}/>
         <Route path='/arms' element={<Biceps/>}/>
         <Route path='/legs' element={<Legs/>}/>
+        <Route path='/bmr' element={<BMR/>}/>
+        <Route path='/calories-calculator' element={<CaloriesCalculator/>}/>
       </Route>
     )
   )
