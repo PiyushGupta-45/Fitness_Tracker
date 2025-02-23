@@ -17,6 +17,7 @@ const Header = () => {
     }
   }, [darkMode]);
 
+  
   return (
     <header className="shadow sticky z-50 top-0 bg-amber-200 dark:bg-zinc-900 transition-colors duration-500">
       <nav className="flex items-center justify-between px-5 py-3">
