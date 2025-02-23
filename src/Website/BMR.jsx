@@ -53,8 +53,8 @@ const BMR = () => {
               value={Gender}
               onChange={handleGenderChange}
             >
-              <option value='male'>Male</option>
-              <option value='female'>Female</option>
+              <option className='dark:text-black' value='male'>Male</option>
+              <option className='dark:text-black' value='female'>Female</option>
             </select>
           </div>
           <div className='pb-1'>
