@@ -51,10 +51,6 @@ const Header = () => {
           >
             Calories Calculator
           </NavLink>
-        </div>
-
-        {/* Right-aligned Navigation Links */}
-        <div className="flex order-2 ml-auto space-x-6 text-black font-bold text-lg dark:text-gray-300">
           <NavLink
             className={({ isActive }) =>
               `hover:underline ${
@@ -75,9 +71,14 @@ const Header = () => {
           >
             Contact
           </NavLink>
+        </div>
+
+        {/* Right-aligned Navigation Links */}
+        <div className="flex order-2 ml-auto space-x-6 text-black font-bold text-lg dark:text-gray-300">
+          
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="ml-auto px-2 bg-gray-900 text-white dark:bg-gray-300 cursor-pointer dark:text-black rounded-lg text-sm font-medium transition-all duration-300"
+            className="ml-auto text-[15px] px-2 py-2 bg-gray-900 text-white dark:bg-gray-300 cursor-pointer dark:text-black rounded-lg text-sm font-medium transition-all duration-300"
           >
           {darkMode ? "Light Mode" : "Dark Mode"}
         </button>
