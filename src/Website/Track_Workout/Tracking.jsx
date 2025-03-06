@@ -53,10 +53,10 @@ const Tracking = () => {
         Here you are going to track your workouts
       </p>
 
-      <section className="my-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <section className="my-10 grid grid-cols-1 md:grid-cols-3 gap-5">
         {workouts.map((workout, index) => (
           <Link key={index} to={workout.link}>
-            <div className='p-4 mx-auto border rounded-lg shadow-sm bg-gray-100 dark:bg-gray-800 dark:border-gray-700 transition-all transform hover:scale-105 duration-300'>
+            <div className='p-3 mx-3 border rounded-lg shadow-sm bg-gray-100 dark:bg-gray-800 dark:border-gray-700 transition-all transform hover:scale-105 duration-300'>
               <img className='h-70 w-auto mx-auto' src={workout.image} alt={workout.title} />
               <h2 className="pt-2 text-xl text-center font-semibold text-gray-800 dark:text-gray-100">
                 {workout.title}
