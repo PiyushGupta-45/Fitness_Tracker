@@ -12,37 +12,37 @@ const workouts = [
     title: "Cardio",
     description: "There are multiple Cardio options, click anywhere on Cardio.",
     image: cardio,
-    link: "/running",
+    link: "/Track-running",
   },
   {
     title: "Back",
     description: "There are multiple Back options, click anywhere on Back.",
     image: back,
-    link: "/back",
+    link: "/Track-back",
   },
   {
     title: "Chest",
     description: "There are multiple Chest options, click anywhere on Chest.",
     image: chest,
-    link: "/chest",
+    link: "/Track-chest",
   },
   {
     title: "Arms",
     description: "There are multiple Arms options, click anywhere on Arms.",
     image: arms,
-    link: "/arms",
+    link: "/Track-arms",
   },
   {
     title: "Shoulders",
     description: "There are multiple Shoulder options, click on Shoulder.",
     image: shoulder,
-    link: "/shoulder",
+    link: "/Track-shoulder",
   },
   {
     title: "Legs",
     description: "There are multiple Legs options, click anywhere on Legs.",
     image: legs,
-    link: "/legs",
+    link: "/Track-legs",
   },
 ];
 
