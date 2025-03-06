@@ -52,8 +52,8 @@ const Header = () => {
 
               {/* Dropdown Menu */}
               {showDropdown && (
-                <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden">
-                  <div className="px-4 py-2 text-gray-900 dark:text-gray-200">{userEmail}</div>
+                <div className="absolute right-0 mt-2 w-55 bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden">
+                  <div className="px-2 py-4 text-gray-900 dark:text-gray-200">{userEmail}</div>
                   <hr className="border-gray-300 dark:border-gray-600" />
                   <button
                     onClick={logout}
