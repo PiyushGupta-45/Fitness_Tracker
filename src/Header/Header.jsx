@@ -28,10 +28,10 @@ const Header = () => {
         </Link>
 
         <div className="flex order-1 flex-grow justify-center space-x-6 text-black font-bold text-lg dark:text-gray-300">
-          <NavLink to="/bmr" className={({ isActive }) => `hover:underline ${isActive ? "text-red-600 dark:text-red-400" : "dark:text-gray-300"}`}>BMR</NavLink>
-          <NavLink to="/calories-calculator" className={({ isActive }) => `hover:underline ${isActive ? "text-red-600 dark:text-red-400" : "dark:text-gray-300"}`}>Calories Calculator</NavLink>
-          <NavLink to="/about" className={({ isActive }) => `hover:underline ${isActive ? "text-red-600 dark:text-red-400" : "dark:text-gray-300"}`}>About</NavLink>
-          <NavLink to="/contact" className={({ isActive }) => `hover:underline ${isActive ? "text-red-600 dark:text-red-400" : "dark:text-gray-300"}`}>Contact</NavLink>
+          <NavLink to="/bmr" className={({ isActive }) => `hover:underline ${isActive ? "text-red-600 dark:text-cyan-400" : "dark:text-gray-300"}`}>BMR</NavLink>
+          <NavLink to="/calories-calculator" className={({ isActive }) => `hover:underline ${isActive ? "text-red-600 dark:text-cyan-400" : "dark:text-gray-300"}`}>Calories Calculator</NavLink>
+          <NavLink to="/about" className={({ isActive }) => `hover:underline ${isActive ? "text-red-600 dark:text-cyan-400" : "dark:text-gray-300"}`}>About</NavLink>
+          <NavLink to="/contact" className={({ isActive }) => `hover:underline ${isActive ? "text-red-600 dark:text-cyan-400" : "dark:text-gray-300"}`}>Contact</NavLink>
         </div>
 
         <div className="flex order-2 ml-auto space-x-6 text-black font-bold text-lg dark:text-gray-300 relative">

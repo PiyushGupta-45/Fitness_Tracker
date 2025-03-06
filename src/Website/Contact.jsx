@@ -13,7 +13,7 @@ const Contact = () => {
       <p className='font-medium text-[28px] text-center mt-4 pb-3.5'>
         Enter Your Details here so that our team can contact you as soon as possible
       </p>
-      <div className='flex flex-col items-center py-6 border-2 border-amber-700 dark:text-white text-black'>
+      <div className='flex flex-col items-center py-6 border-2 border-amber-700 mb-4 dark:text-white text-black'>
         <div>
           <label htmlFor="name" className='text-[18px]'>Enter Your Name Here: </label>
           <input className='shadow text-center text-[18px] ' id='name' type="text" placeholder="Enter Here" />
