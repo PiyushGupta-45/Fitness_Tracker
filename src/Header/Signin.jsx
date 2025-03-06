@@ -34,7 +34,7 @@ const Signin = () => {
 
   return (
     <div className="h-screen flex justify-center items-center bg-gray-100">
-      <div className="bg-white p-6 border border-gray-300 rounded-lg shadow-lg w-80 md:w-96 text-center">
+      <div className="bg-white dark: text-black p-6 border border-gray-300 rounded-lg shadow-lg w-80 md:w-96 text-center">
         <h2 className="text-2xl font-semibold mb-4">Sign In</h2>
         <GoogleOAuthProvider clientId={clientId}>
           <div className="pt-4">
