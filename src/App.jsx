@@ -2,6 +2,7 @@ import './App.css'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 
 import Layout from './Layout'
+import Signin from './Header/Signin'
 
 import Home from './Website/Home'
 import About from './Website/About'
@@ -32,6 +33,7 @@ function App() {
     createRoutesFromElements(
       <Route path='/' element={<Layout/>}>
         <Route path='' element={<Home/>}/>
+        <Route path='/signin' element={<Signin/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/goals' element={<Goals/>}/>

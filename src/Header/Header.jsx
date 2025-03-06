@@ -83,6 +83,11 @@ const Header = () => {
           >
           {darkMode ? "Light Mode" : "Dark Mode"}
         </button>
+
+        <NavLink to="/signin" className="flex items-center space-x-2 bg-white text-blue-700 
+        px-4 py-2 rounded-lg  hover:bg-gray-100 transition-colors">
+          <span>Sign in</span>
+        </NavLink>
         </div>
       </nav>
     </header>
