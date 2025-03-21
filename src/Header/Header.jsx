@@ -8,6 +8,8 @@ const Header = () => {
   const { userEmail, logout } = useContext(AuthContext); // Get userEmail and logout from context
   const [darkMode, setDarkMode] = useState(localStorage.getItem("theme") === "dark");
   const [showDropdown, setShowDropdown] = useState(false); // State to show/hide dropdown
+  const [showFeatures, setShowFeatures] = useState(false); // State for features dropdown
+  let featureTimeout;
 
   // 🛠 Apply dark mode on initial load
   useEffect(() => {
@@ -28,8 +30,28 @@ const Header = () => {
         </Link>
 
         <div className="flex order-1 flex-grow justify-center space-x-6 text-black font-bold text-lg dark:text-gray-300">
-          <NavLink to="/bmr" className={({ isActive }) => `hover:underline ${isActive ? "text-red-600 dark:text-cyan-400" : "dark:text-gray-300"}`}>BMR</NavLink>
-          <NavLink to="/calories-calculator" className={({ isActive }) => `hover:underline ${isActive ? "text-red-600 dark:text-cyan-400" : "dark:text-gray-300"}`}>Calories Calculator</NavLink>
+          <div
+            className="relative"
+            onMouseEnter={() => {
+              clearTimeout(featureTimeout);
+              setShowFeatures(true);
+            }}
+            onMouseLeave={() => {
+              featureTimeout = setTimeout(() => setShowFeatures(false),120);
+            }}
+          >
+            <button className="hover:underline text-black dark:text-gray-300">Features </button>
+            {showFeatures && (
+              <div 
+                className="absolute left-0 mt-2 w-48 bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden"
+                onMouseEnter={() => clearTimeout(featureTimeout)}
+                onMouseLeave={() => setShowFeatures(false)}
+              >
+                <NavLink to="/bmr" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">BMR</NavLink>
+                <NavLink to="/calories-calculator" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">Calories Calculator</NavLink>
+              </div>
+            )}
+          </div>
           <NavLink to="/about" className={({ isActive }) => `hover:underline ${isActive ? "text-red-600 dark:text-cyan-400" : "dark:text-gray-300"}`}>About</NavLink>
           <NavLink to="/contact" className={({ isActive }) => `hover:underline ${isActive ? "text-red-600 dark:text-cyan-400" : "dark:text-gray-300"}`}>Contact</NavLink>
         </div>
