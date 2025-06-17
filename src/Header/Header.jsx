@@ -37,10 +37,10 @@ const Header = () => {
               setShowFeatures(true);
             }}
             onMouseLeave={() => {
-              featureTimeout = setTimeout(() => setShowFeatures(false),120);
+              featureTimeout = setTimeout(() => setShowFeatures(false),150);
             }}
           >
-            <button className="hover:underline text-black dark:text-gray-300">Features </button>
+            <NavLink className="hover:underline text-black dark:text-gray-300">Features </NavLink>
             {showFeatures && (
               <div 
                 className="absolute left-0 mt-2 w-48 bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden"
